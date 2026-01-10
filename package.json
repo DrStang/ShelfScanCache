@@ -1,0 +1,23 @@
+{
+  "name": "book-scanner-backend",
+  "version": "1.0.0",
+  "description": "Warm Cache for Book Spine Scanner",
+  "main": "warm-cache.js",
+  "scripts": {
+    "start": "node warm-cache.js",
+    "dev": "nodemon warm-cache.js"
+  },
+  "keywords": ["books", "scanner", "openai", "api"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "redis": "^4.6.12",
+    "mariadb": "^3.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  }
+}
