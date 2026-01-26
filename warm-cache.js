@@ -20,7 +20,7 @@ async function warmCache() {
     password: process.env.DB_PASS,
     port: process.env.DB_PORT,
     database: process.env.DB_NAME || 'Goodreads',
-    connectionLimit: 10
+    connectionLimit: 20
   });
   
   const conn = await pool.getConnection();
