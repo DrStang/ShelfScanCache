@@ -1,10 +1,10 @@
 // warm-cache.js
-import { createClient } from 'redis'; 
-import mariadb from 'mariadb';
-import 'dotenv/config';
+const redis = require 'redis';
+require('dotenv').config();
 
 async function warmCache() {
   console.log('🔥 Starting cache warm-up...');
+  const mariadb = await import ('mariadb');
   
   // Connect to Redis
   const redisClient = redis.createClient({
