@@ -1,5 +1,5 @@
 // warm-cache.js
-const redis = require 'redis';
+const redis = require ('redis');
 require('dotenv').config();
 
 async function warmCache() {
