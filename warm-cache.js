@@ -29,7 +29,7 @@ async function warmCache() {
   // Get popular books
   console.log('📚 Fetching popular books from Goodreads DB...');
   const rows = await conn.query(
-    'SELECT isbn, star_rating, num_ratings FROM Scrape WHERE num_ratings > 1000 ORDER BY num_ratings DESC LIMIT 150000'
+    'SELECT isbn, star_rating, num_ratings FROM Scrape WHERE num_ratings > 1000 ORDER BY num_ratings DESC LIMIT 100000'
   );
   console.log(`📚 Found ${rows.length} books to cache`);
   
